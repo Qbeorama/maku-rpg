@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesjonalny Mistrz Gry RPG - Epickie Przygody Czekają</title>
+    <meta name="description" content="Profesjonalne usługi Mistrza Gry RPG. Odkryj magię gier fabularnych z doświadczonym gamemaster'em. Od 40zł za sesję.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for new images */
+        .hero__avatar-img {
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: var(--space-20);
+            border: 4px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Replace the old div-based avatar style with one for the img tag */
+        .testimonial__avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: var(--color-secondary); /* Fallback background */
+        }
+
+        /* The original icon is no longer needed */
+        .avatar__icon {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <h2>RPG Master</h2>
+                </div>
+                <div class="nav__links">
+                    <a href="#uslugi" class="nav__link">Usługi</a>
+                    <a href="#o-mnie" class="nav__link">O mnie</a>
+                    <a href="#opinie" class="nav__link">Opinie</a>
+                    <a href="#kontakt" class="nav__link">Kontakt</a>
+                </div>
+                <button class="btn btn--primary nav__cta">Zarezerwuj Sesję</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Profesjonalny Mistrz Gry RPG</h1>
+                    <p class="hero__subtitle">Zanurz się w świat epickich przygód prowadzonych przez doświadczonego gamemaster'a. Każda sesja to niezapomniana podróż do krainy wyobraźni.</p>
+                    <div class="hero__price">
+                        <span class="hero__price-main">40zł</span>
+                        <span class="hero__price-desc">za osobę / 4h sesja</span>
+                    </div>
+                    <div class="hero__cta">
+                        <button class="btn btn--primary btn--lg">Rozpocznij Przygodę</button>
+                        <button class="btn btn--outline btn--lg">Zobacz Cennik</button>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__avatar">
+                        <img src="gamemaster.jpg" alt="Portret Mistrza Gry" class="hero__avatar-img">
+                        <div class="avatar__title">Maku</div>
+                        <div class="avatar__subtitle">8+ lat doświadczenia <br> Założyciel Głowy Pełnej Przygód <br> Prawdziwy Majster</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="uslugi" class="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Wybierz Swój Poziom Przygody</h2>
+                <p class="section__subtitle">Każdy pakiet został zaprojektowany, aby zapewnić niezapomniane doświadczenie RPG</p>
+            </div>
+            <div class="pricing__grid">
+                <div class="pricing__card">
+                    <div class="pricing__header">
+                        <h3 class="pricing__name">Podstawowy</h3>
+                        <div class="pricing__price">
+                            <span class="pricing__amount">40zł</span>
+                            <span class="pricing__period">/ osoba / 4h</span>
+                        </div>
+                    </div>
+                    <ul class="pricing__features">
+                        <li>Profesjonalne prowadzenie sesji</li>
+                        <li>Przygotowane scenariusze</li>
+                        <li>Podstawowe rekwizyty</li>
+                        <li>Muzyka i efekty dźwiękowe</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width">Wybierz Plan</button>
+                </div>
+
+                <div class="pricing__card pricing__card--featured">
+                    <div class="pricing__badge">Najpopularniejszy</div>
+                    <div class="pricing__header">
+                        <h3 class="pricing__name">Premium</h3>
+                        <div class="pricing__price">
+                            <span class="pricing__amount">60zł</span>
+                            <span class="pricing__period">/ osoba / 4h</span>
+                        </div>
+                    </div>
+                    <ul class="pricing__features">
+                        <li>Wszystko z pakietu Podstawowego</li>
+                        <li>Scenariusze pisane pod postaci graczy</li>
+                        <li>Mapy, żetony, figurki (przynieś własne)</li>
+                        <li>Ogrywam głosy postaci</li>
+                        <li>Papierowe rekwizyty</li>
+                        <li>Przygody nie są railroadowane</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width">Wybierz Plan</button>
+                </div>
+
+                <div class="pricing__card">
+                    <div class="pricing__header">
+                        <h3 class="pricing__name">Elite</h3>
+                        <div class="pricing__price">
+                            <span class="pricing__amount">80zł</span>
+                            <span class="pricing__period">/ osoba / 4h</span>
+                        </div>
+                    </div>
+                    <ul class="pricing__features">
+                        <li>Wszystko z pakietu Premium</li>
+                        <li>Spersonalizowane kampanie</li>
+                        <li>Przyjdę w profesjonalnym kostiumie</li>
+                        <li>Efekty specjalne: maszyna do dymu</li>
+                        <li>Sesja fotograficzna z MG</li>
+                        <li>Opcjonalne BHSy (za dodatkową opłatą)</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width">Wybierz Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="o-mnie" class="features">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Dlaczego Wybrać Mnie?</h2>
+                <p class="section__subtitle">Unikalne cechy i umiejętności, które czynią każdą sesję niezapomnianą</p>
+            </div>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">🎭</div>
+                    <h3 class="feature__title">Doświadczenie 8+ lat</h3>
+                    <p class="feature__description">Ponad 8 lat prowadzenia sesji RPG w różnych systemach</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">⚡</div>
+                    <h3 class="feature__title">Mistrz improwizacji</h3>
+                    <p class="feature__description">Umiejętność dostosowania fabuły do decyzji graczy (za dopłatą w planie Premium)</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🎤</div>
+                    <h3 class="feature__title">Kolekcja 500+ głosów</h3>
+                    <p class="feature__description">Każda postać brzmi inaczej dzięki mojemu rozległemu repertuarowi</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">📚</div>
+                    <h3 class="feature__title">Encyklopedia systemów RPG</h3>
+                    <p class="feature__description">Znajomość dziesiątek systemów gier fabularnych. <br> Albo przynajmniej dedeki i YZE.</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🎬</div>
+                    <h3 class="feature__title">Teatralne wykształcenie</h3>
+                    <p class="feature__description">Profesjonalne podejście do aktorstwa i narracji</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">✨</div>
+                    <h3 class="feature__title">Nieograniczona wyobraźnia</h3>
+                    <p class="feature__description">Tworzenie światów ograniczonych tylko wyobraźnią</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="opinie" class="testimonials">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Co Mówią Gracze</h2>
+                <p class="section__subtitle">Opinie zadowolonych uczestników moich sesji</p>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial__card">
+                    <div class="testimonial__rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial__text">"Najlepsze 4 godziny mojego życia! Pierwsza scena wyjebała mnie z papci, a napięcie tylko rosło."</p>
+                    <div class="testimonial__author">
+                        <img src="client2.jpg" alt="Zdjęcie klientki Ani" class="testimonial__avatar">
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Skrajnie Poczytalny</h4>
+                            <p class="testimonial__role">MG, YouTuber, Wąsacz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial__card">
+                    <div class="testimonial__rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial__text">"Nie chce mi się pisać opinii. Ale Maku jest super!"</p>
+                    <div class="testimonial__author">
+                        <img src="client1.jpg" alt="Zdjęcie klienta Marcina" class="testimonial__avatar">
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Ewa</h4>
+                            <p class="testimonial__role">Autorka gry RPG "Alice is Missing"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial__card">
+                    <div class="testimonial__rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial__text">"Od roku gramy regularnie i nie mogę się nadziwić kreatywności naszego Mistrza. Emocje takie, jakby ktoś mi kreta do dupy nalał."</p>
+                    <div class="testimonial__author">
+                         <img src="client3.jpg" alt="Zdjęcie klienta Kamila" class="testimonial__avatar">
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Michał</h4>
+                            <p class="testimonial__role">Doświadczony gracz i MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <div class="contact__content">
+                <div class="contact__text">
+                    <h2 class="contact__title">Gotowy na Przygodę?</h2>
+                    <p class="contact__subtitle">Skontaktuj się ze mną i zarezerwuj swoją pierwszą sesję. Odpowiem w ciągu 24 godzin!</p>
+                </div>
+                <div class="contact__form">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Imię</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Wiadomość</label>
+                            <textarea id="message" name="message" rows="4" class="form-control" placeholder="Opowiedz mi o swojej grupie i preferowanym stylu gry..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width btn--lg">Wyślij Wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p>&copy; 2025 RPG Master sp. z o.o. Wszystkie prawa zastrzeżone.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Regulamin</a>
+                    <a href="#" class="footer__link">Polityka Prywatności</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            initSmoothScrolling();
+            
+            // Contact form handling
+            initContactForm();
+            
+            // CTA button handlers
+            initCTAButtons();
+            
+            // Header scroll effect
+            initHeaderScrollEffect();
+            
+            // Animation on scroll
+            initScrollAnimations();
+
+            // Add interactive effects
+            initInteractiveEffects();
+        });
+
+        // Smooth scrolling for navigation links
+        function initSmoothScrolling() {
+            const navLinks = document.querySelectorAll('.nav__link[href^="#"], .hero__cta .btn, .nav__cta');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    let targetId;
+                    if (this.getAttribute('href')) {
+                        targetId = this.getAttribute('href');
+                    } else if (this.textContent.includes('Cennik')) {
+                        targetId = '#uslugi';
+                    } else {
+                        targetId = '#kontakt';
+                    }
+
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        e.preventDefault();
+                        const headerHeight = document.querySelector('.header').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Contact form handling
+        function initContactForm() {
+            const contactForm = document.querySelector('.contact .form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(this);
+                    const formObject = {};
+                    formData.forEach((value, key) => { formObject[key] = value; });
+                    
+                    if (!formObject.name || !formObject.email || !formObject.message) {
+                        showNotification('Proszę wypełnić wszystkie pola', 'error');
+                        return;
+                    }
+                    
+                    if (!isValidEmail(formObject.email)) {
+                        showNotification('Proszę podać prawidłowy adres email', 'error');
+                        return;
+                    }
+                    
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    
+                    submitButton.textContent = 'Wysyłanie...';
+                    submitButton.disabled = true;
+                    
+                    setTimeout(() => {
+                        showNotification('Wiadomość została wysłana! Odpowiem w ciągu 24 godzin.', 'success');
+                        contactForm.reset();
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    }, 2000);
+                });
+            }
+        }
+
+        // CTA button handlers
+        function initCTAButtons() {
+            const planButtons = document.querySelectorAll('.pricing__card .btn');
+            
+            planButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const card = this.closest('.pricing__card');
+                    const planName = card.querySelector('.pricing__name').textContent;
+                    const planPrice = card.querySelector('.pricing__amount').textContent;
+                    
+                    const contactSection = document.querySelector('#kontakt');
+                    const messageField = document.querySelector('#message');
+                    
+                    if (messageField) {
+                        messageField.value = `Jestem zainteresowany/a pakietem ${planName} (${planPrice}/osoba). `;
+                        messageField.focus();
+                    }
+                    
+                    if (contactSection) {
+                         const headerHeight = document.querySelector('.header').offsetHeight;
+                         const targetPosition = contactSection.offsetTop - headerHeight - 20;
+                         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    }
+                    
+                    showNotification(`Wybrano pakiet ${planName}. Wypełnij formularz poniżej!`, 'info');
+                });
+            });
+        }
+
+        // Header scroll effect
+        function initHeaderScrollEffect() {
+            const header = document.querySelector('.header');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 50) {
+                    header.style.background = 'rgba(15, 23, 42, 0.95)';
+                    header.style.backdropFilter = 'blur(15px)';
+                } else {
+                    header.style.background = 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)';
+                    header.style.backdropFilter = 'blur(10px)';
+                }
+            });
+        }
+
+        // Animation on scroll
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('is-hidden');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            const animatedElements = document.querySelectorAll('.pricing__card, .feature__card, .testimonial__card');
+            
+            animatedElements.forEach(el => {
+                el.classList.add('is-hidden');
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .is-hidden {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // Interactive Effects (Ripple + Testimonial Hover)
+        function initInteractiveEffects() {
+            const testimonialCards = document.querySelectorAll('.testimonial__card');
+            testimonialCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+            
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = `${size}px`;
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    ripple.classList.add('ripple');
+                    
+                    const existingRipple = this.querySelector('.ripple');
+                    if(existingRipple) {
+                        existingRipple.remove();
+                    }
+
+                    this.appendChild(ripple);
+                    
+                    ripple.addEventListener('animationend', () => {
+                        ripple.remove();
+                    });
+                });
+            });
+        }
+
+        // Utility functions
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function showNotification(message, type = 'info') {
+            const existingNotification = document.querySelector('.notification');
+            if (existingNotification) existingNotification.remove();
+            
+            const notification = document.createElement('div');
+            notification.className = `notification notification--${type}`;
+            const typeColors = {
+                success: '#10b981',
+                error: '#ef4444',
+                info: '#3b82f6'
+            };
+            
+            notification.style.cssText = `
+                position: fixed; top: 100px; right: 20px; z-index: 1001;
+                background: ${typeColors[type] || typeColors.info};
+                color: white; padding: 16px; border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                max-width: 400px; transform: translateX(120%);
+                transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+                display: flex; align-items: center; justify-content: space-between;
+            `;
+            
+            const messageSpan = document.createElement('span');
+            messageSpan.textContent = message;
+            
+            const closeButton = document.createElement('button');
+            closeButton.innerHTML = '&times;';
+            closeButton.style.cssText = `
+                background: none; border: none; color: white; font-size: 24px;
+                margin-left: 16px; cursor: pointer; padding: 0 4px; line-height: 1;
+            `;
+            
+            notification.appendChild(messageSpan);
+            notification.appendChild(closeButton);
+            document.body.appendChild(notification);
+            
+            setTimeout(() => { notification.style.transform = 'translateX(0)'; }, 50);
+
+            const close = () => {
+                notification.style.transform = 'translateX(120%)';
+                setTimeout(() => { if (notification) notification.remove(); }, 400);
+            };
+
+            closeButton.addEventListener('click', close);
+            setTimeout(close, 5000);
+        }
+    </script>
+</body>
+</html>
